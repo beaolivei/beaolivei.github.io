@@ -7,6 +7,28 @@
     color: aliceblue;
     padding: 10px;
     }
+
+@media (max-width: 375px) {
+    .topbar ul li {
+            display: none;
+        }
+    }
+    .topbar img.fone {
+        display: none;
+    }
+@media (max-width: 375px) {
+    .topbar img.fone {
+           display: inline;
+       }
+    }
+@media (max-width: 375px) {
+    .topbar img.logologo {
+        display: inline;
+        margin-right: 140px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+}
 .topbar ul li a{
     text-decoration: none;
     text-transform: uppercase;
@@ -18,6 +40,7 @@
     border-radius: 5px;
     padding: 8px;
 }
+
 body{
     margin: 0;
 }
@@ -33,6 +56,11 @@ nav.topbar {
     opacity: 50%;
     word-spacing: 10px;
 }
+@media (max-width: 375px) {
+    nav.topbar {
+        display: block;
+    }
+ }
 
 /** Display Flex habilita outras propriedades. pega as filhas diretas e coloca uma do lado da outra**/
 header {
@@ -46,6 +74,10 @@ header {
     align-items: center;
     /**align itens alinha o texto na vertical**/
 }
+@media (max-width: 375px) {
+    display: block;
+}
+
 h1{
     font-size: 36px;
     text-transform: uppercase;
