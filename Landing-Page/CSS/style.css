@@ -75,7 +75,10 @@ header {
     /**align itens alinha o texto na vertical**/
 }
 @media (max-width: 375px) {
-    display: block;
+    header {
+        min-height: 150vh;
+        width: 450px;
+    }
 }
 
 h1{
@@ -106,6 +109,11 @@ header a{
     opacity: 50%;
     padding: 10px;
     margin-top: 15px;
+}
+@media (max-width: 375px) {
+    .sobre, .passo-a-passo, .curiosidades, .contato, .newsletter { 
+    display: none;
+}
 }
 .sobre > div {
     display: flex;
@@ -139,15 +147,22 @@ header a{
     margin-bottom: 40px;
     font-family: 'Asap', 'Flamenco'
 }
+@media (max-width: 375px) {
+    .servicos h2 {
+        margin-top: 15px;
+    }
+}
+
 .servicos{
     background-image: url(../img/bg-servicos.png);
-   
+ 
     padding: 50px;
+    width: 350px;
 }
-.maior{
-    display: flex;
+.maior {
+    display: block;
     justify-content: space-around;
-    font-family: 'Asap', 'Flamenco'
+    font-family: 'Asap', 'Flamenco';
     
 }
 .maior div{
@@ -160,6 +175,11 @@ header a{
     align-content: center;
     text-align: center;
   
+}
+@media (max-width: 375px) {
+    .maior div {
+        margin-top: 10px;
+    }
 }
 
 .maior div h3{
@@ -280,12 +300,27 @@ label, input, button{
     background-color: lightgray;
     padding: 30px  
  } 
+ @media (max-width: 375px) {
+     .footer {
+         width: 440px;
+         height: 100px;
+     }
+
+ }
  .listafooter > ul li,a{
      list-style: none;
      text-decoration: none;
      color: white;
 
  }
+@media (max-width: 375px) {
+    .listafooter {
+        display: none;
+    }
+    .redes-sociais {
+        display: none;
+    }
+}
 
 
 
